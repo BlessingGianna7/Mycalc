@@ -5,7 +5,7 @@ const express = require('express');
  app.use(bodyParser.urlencoded({ extended: false })); 
 
  app.get('/', (req,res)=>{
-    res.sendFile('./exam.hmtl');
+    res.sendFile('exam.html');
  })
   //multiplication
  app.post('/multiplication' , (req,res)=>{
@@ -64,4 +64,4 @@ let num1= parseInt(req.params.num1);
 
 
 
-  app.listen(3300, () => { console.log(`Calculator app listening at port 3300`); }); 
+  app.listen(5600, () => { console.log(`Calculator app listening at port 5600`); }); 
